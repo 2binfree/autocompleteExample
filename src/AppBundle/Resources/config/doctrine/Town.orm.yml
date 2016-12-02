@@ -1,0 +1,18 @@
+AppBundle\Entity\Town:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\TownRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        country:
+            type: string
+            length: '2'
+        town:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

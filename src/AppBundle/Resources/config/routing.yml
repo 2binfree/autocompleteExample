@@ -1,0 +1,7 @@
+app_contact:
+    resource: "@AppBundle/Resources/config/routing/contact.yml"
+    prefix:   /contact
+app_town:
+    resource: "@AppBundle/Resources/config/routing/town.yml"
+    prefix:   /town
+
