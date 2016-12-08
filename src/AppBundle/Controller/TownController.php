@@ -5,12 +5,11 @@ namespace AppBundle\Controller;
 use AppBundle\Repository\TownRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class TownController extends Controller
 {
-    public function autocompleteAction(Request $request, $town)
+    public function autoCompleteAction(Request $request, $town)
     {
         if ($request->isXmlHttpRequest()){
             /**

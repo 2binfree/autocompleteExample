@@ -1,4 +1,4 @@
 town_ajax:
     path:     /ajax/{town}
     defaults: { _controller: "AppBundle:Town:Autocomplete" }
-    methods:  POST
+    methods:  GET

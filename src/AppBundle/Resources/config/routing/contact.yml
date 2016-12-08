@@ -11,7 +11,7 @@ contact_show:
 contact_new:
     path:     /new
     defaults: { _controller: "AppBundle:Contact:new" }
-    methods:  [GET, POST]
+    methods:  [POST]
 
 contact_edit:
     path:     /{id}/edit

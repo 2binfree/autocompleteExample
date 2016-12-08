@@ -34,7 +34,7 @@ class ContactController extends Controller
     public function newAction(Request $request)
     {
         $contact = new Contact();
-        $form = $this->createForm('AppBundle\Form\ContactType', $contact);
+        $form = $this->createForm('Appbundle\Form\ContactType', $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

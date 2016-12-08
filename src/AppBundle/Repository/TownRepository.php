@@ -18,7 +18,7 @@ class TownRepository extends EntityRepository
         $qb = $this->createQueryBuilder('t')
             ->select('t.town')
             ->where('t.country = :country')
-            ->andWhere('t.town LIKE :town')
+            ->andWhere('t.town LIKE $town')
             ->setParameter('country', $country)
             ->setParameter('town', $town)
             ->getQuery();
